@@ -36,7 +36,7 @@
 
   /* Header */
   header {
-    /* No border */
+    border-bottom: 1px solid #e5e5e5;
   }
   .header-inner {
     display: flex;
@@ -68,6 +68,8 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: #555;
+    border-bottom: 1px solid #111;
+    padding-bottom: 8px;
     margin-bottom: 20px;
   }
 
@@ -95,8 +97,10 @@
 
   /* Work */
   .work-item {
-    padding: 16px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
   }
+  .work-item:last-child { border-bottom: none; }
   .work-item .num {
     font-size: 13px;
     color: #555;
@@ -137,9 +141,11 @@
   /* Contact */
   .contact-list { list-style: none; }
   .contact-list li {
-    padding: 8px 0;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
     display: flex;
   }
+  .contact-list li:last-child { border-bottom: none; }
   .contact-list .label {
     width: 110px;
     flex-shrink: 0;
@@ -168,10 +174,10 @@
     nav a { font-size: 13px; padding: 10px 6px; }
     .intro h1 { margin-top: 32px; font-size: 28px; }
     section { padding: 36px 0 4px; }
-    .work-item { padding: 14px 0; }
+    .work-item { padding: 18px 0; }
     .work-item h3 { font-size: 17px; }
     .contact-list .label { width: 84px; }
-    .contact-list li { padding: 8px 0; }
+    .contact-list li { padding: 14px 0; }
   }
 
   /* Very small phones (320px class) */
